@@ -97,20 +97,63 @@ Texte par defaut...
 
 ### Principes 
 
-Le traitement d’un formulaire se fait toujours \(pour notre semestre 1\) avec un langage serveur. PHP est un langage serveur. Il faut donc maintenant écrire un fichier de traitement pour le formulaire. Ce fichier doit porter le nom que vous avez mis dans l’attribut _action_ de votre balise form. Il existe ensuite deux façon de traiter les éléments. Cela dépend si le formulaire est envoyé en **POST** ou en **GET**. Dans PHP on récupère les éléments avec des ”**tableaux superglobaux**”. Ces tableaux sont des tableaux particuliers qui sont automatiquement présent si on peut s’en servir \(par exemple si un formulaire est envoyé\). Leur syntaxe est la suivante : 
+Le traitement d’un formulaire se fait toujours \(pour notre semestre 1\) avec un langage serveur. PHP est un langage serveur. Il faut donc maintenant écrire un fichier de traitement pour le formulaire. Ce fichier doit porter le nom que vous avez mis dans l’attribut _action_ de votre balise form. Il existe ensuite deux façon de traiter les éléments. Cela dépend si le formulaire est envoyé en **POST** ou en **GET**. Dans PHP on récupère les éléments avec des "**tableaux superglobaux"**. Ces tableaux sont des tableaux particuliers qui sont automatiquement présent si on peut s’en servir \(par exemple si un formulaire est envoyé\). Leur syntaxe est la suivante : 
 
 * `$_POST[ ]` si le formulaire est envoyé en POST \(method=”POST”\) 
 * `$_GET[ ]` si le formulaire est envoyé en GET \(method=”GET”\) 
 
-Il faut ensuite préciser le nom du champ \(input, select ou textarea\) que l’on souhaite récupérer en écrivant par exemple `$ POST['nom du champ']`. Le nom du champ est la valeur de l’attribut name de votre champ. 
+Il faut ensuite préciser le nom du champ \(input, select ou textarea\) que l’on souhaite récupérer en écrivant par exemple `$ POST['nom_du_champ']`. Le nom du champ est la valeur de l’attribut name de votre champ. 
 
-4 2.2 Exemple Listing 6 – Exemple de fichier contenant le formulaire 1 ... 2 3
+### Exemple 
 
-Nom :  4
+{% code-tabs %}
+{% code-tabs-item title="Formulaire composé de 3 champs" %}
+```markup
+...
+<form action="traitement.php" method="POST">
+    <p>Nom : <input type="text" name="nom" /></p>
+    <p>Prénom : <input type="text" name="prenom" /></p>
+    <p>Age : <input type="text" name="age" /></p>
+    <p><input type="submit" value="Enregistrer"/></p>
+</form>
+...
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
-Prénom :  5
 
-Age :  6
 
- 7 8 ... Un exemple de fichier de traitement permettant d’afficher les donn´ees dans le formulaire pourrait ressembler au code ci-dessous : Listing 7 – Exemple de fichier contenant le formulaire 1 ... 2  9 ... 3 Exercices 3.1 Exercice 1 : Calculatrice Ecrire un formulaire ´ « calculatrice » qui comprendra 2 cases \(zone de saisie libre\) pour la saisie des nombres \(op´erande\), un groupe de 4 cases \`a cocher pour le choix de l’op´eration, un bouton pour effectuer l’op´eration. 5 3.2 Exercice 2 : Table de multiplication Ecrire un formulaire qui demande deux nombres a et b. Il affiche ensuite ´ la table de multiplication par a sur b lignes. 3.3 Exercice 3 : Petit jeu Vous devez deviner le nombre que le programme a choisi. Vous proposez une solution, et le programme vous r´epond « trop petit » ou « trop grand » suivant le cas, jusqu’\`a trouver le bon nombre. 6
+Un exemple de fichier de traitement permettant d’afficher les données provenant du formulaire pourrait ressembler au code ci-dessous :
+
+{% code-tabs %}
+{% code-tabs-item title="Exemple de fichier de traitement en PHP" %}
+```php
+...
+<?php
+$nom = $_POST['nom'];
+$prenom = $_POST['prenom'];
+$age = $_POST['age'];
+
+echo 'Vous êtes '.$prenom.' '.$nom.', vous avez '.$age.' ans';
+?>
+...
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+
+
+## Exercices
+
+### Exercice 1 : Calculatrice 
+
+Ecrire un formulaire ´ « calculatrice » qui comprendra 2 cases \(zone de saisie libre\) pour la saisie des nombres \(opérande\), un groupe de 4 cases à cocher pour le choix de l’opération, un bouton pour effectuer l’opération. 
+
+### Exercice 2 : Table de multiplication 
+
+Ecrire un formulaire qui demande deux nombres a et b. Il affiche ensuite la table de multiplication par a sur b lignes. 
+
+### Exercice 3 : Petit jeu 
+
+Vous devez deviner le nombre que le programme a choisi. Vous proposez une solution, et le programme vous répond « trop petit » ou « trop grand » suivant le cas, jusqu'à trouver le bon nombre.
 
