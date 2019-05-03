@@ -147,13 +147,5 @@ echo 'Vous êtes '.$prenom.' '.$nom.', vous avez '.$age.' ans';
 
 ### Exercice 1 : Calculatrice 
 
-Ecrire un formulaire ´ « calculatrice » qui comprendra 2 cases \(zone de saisie libre\) pour la saisie des nombres \(opérande\), un groupe de 4 cases à cocher pour le choix de l’opération, un bouton pour effectuer l’opération. 
-
-### Exercice 2 : Table de multiplication 
-
-Ecrire un formulaire qui demande deux nombres a et b. Il affiche ensuite la table de multiplication par a sur b lignes. 
-
-### Exercice 3 : Petit jeu 
-
-Vous devez deviner le nombre que le programme a choisi. Vous proposez une solution, et le programme vous répond « trop petit » ou « trop grand » suivant le cas, jusqu'à trouver le bon nombre.
+Ecrire un formulaire ´ « calculatrice » qui comprendra 2 cases \(zone de saisie libre\) pour la saisie des nombres \(opérande\), un groupe de 4 cases à cocher pour le choix de l’opération, un bouton pour effectuer l’opération.
 
