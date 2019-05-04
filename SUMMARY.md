@@ -21,4 +21,6 @@
 ## Ressources externes
 
 * [Document officielle de PHP](https://www.php.net/)
+* [Tableaux en HTML](https://www.w3schools.com/html/html_tables.asp)
+* [Formulaires en HTML](https://www.w3schools.com/html/html_forms.asp)
 
