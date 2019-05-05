@@ -2,6 +2,12 @@
 
 ## Introduction
 
+En PHP, un tableau est une collection \(liste d’éléments\) ordonnée de couples clé/valeur.
+
+La clé peut être de type entier ou de type chaîne. Dans le premier cas, le tableau est dit numérique et la clé est désignée par le terme indice. Dans le deuxième cas, le tableau est dit associatif : les clés ne sont pas forcément consécutives, ni ordonnées, et ce tableau peut présenter des clés entières et des clés de type chaîne.
+
+La valeur associée à la clé peut être de n’importe quel type, et notamment de type tableau ; dans ce cas, le tableau est dit multidimensionnel.
+
 ## Tableaux indexés en PHP
 
 Les tableaux sont une structure de données qui permet de stocker une suite de valeurs en mémoire sous un seul nom, chaque valeur est repérée par un numéro
