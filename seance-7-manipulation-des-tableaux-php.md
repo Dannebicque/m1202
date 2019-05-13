@@ -59,7 +59,7 @@ $tabNotes[] = 12.5;
 $somme = $tabNotes[0] + $tabNotes[1] + $tabNotes[2] + $tabNotes[3] + $tabNotes[4];
 
 echo 'La somme vaut :'. $somme;
-$moyenne = $somme /5;
+$moyenne = $somme / 5;
 
 echo 'La moyenne vaut :'. $moyenne;
 ?>
@@ -157,7 +157,7 @@ $tabAssoNotes = ['matiere' => 'm1202',
 echo '<p>';
 // Afficher les valeurs
 
-foreach ( $tabAssoNotes as $cle = > $valeur )
+foreach ( $tabAssoNotes as $cle => $valeur )
 {
      echo $cle .': '. $valeur .'<br />';
 }
