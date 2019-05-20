@@ -40,14 +40,56 @@ $valeurs = ['1' => 'ace',
 
 ## 1. Créer un jeu de 32 <a id="cr&#xE9;er-un-jeu-de-32-ou-52-cartes"></a>
 
-On donne le fichier de départ “http://195.83.128.55/~jlandre/m1202/tp5etu.zip”.
+On donne les fichiers de départ ci-dessous :
 
-* Télécharger ce fichier, le décompresser, déplacer le dossier dans un endroit où vous pourrez le retrouver facilement.
-* Ce dossier contient quatre fichiers :
-  * “theme.css” est le style CSS des éléments \(il est volontairement très simple, vous pouvez l’améliorer si vous le souhaitez\).
-  * “index.php” est la page d’accueil qui permet de choisir entre un jeu de 32 ou de 52 cartes. Le formulaire appelle la page “jeu.php”.
-  * “jeu.php” est la page de création du jeu en mélangeant les informations provenant de deux tableaux. Elle permet le choix du nombre de joueurs et du nombre de cartes grâce à un formulaire qui appelle la page “distribue.php”.
-  * “distribue.php” est la page de distribution du jeu de cartes en fonction des deux paramètres : nombre de joueur et nombre de cartes.
+### jeu.php
+
+{% code-tabs %}
+{% code-tabs-item title="Fichier jeu.php" %}
+```php
+<!DOCTYPE html>
+<html lang ="fr">
+<head>
+    <title>Jeu.php</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <h1>Distribuer les cartes</h1>
+    <form action="distribue.php" method="post">
+        <p>Nombre de joueurs : <input type="text" name="nombre_joueurs" /></p>
+        <p>Nombre de cartes : <input type="text" name="nombre_cartes" /></p>
+        <p><input type="submit" value="Distribuer !"/></p>
+    </form>
+    <br>
+    <h1>Jeu de 32 cartes</h1>
+    <!-- Compléter pour afficher le jeu complet -->
+</body>
+</html>
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+### distribue.php
+
+{% code-tabs %}
+{% code-tabs-item title="fichier distribue.php" %}
+```php
+<!DOCTYPE html>
+<html lang ="fr">
+<head>
+    <title>Distribue.php</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+<h1>Distribution des cartes</h1>
+<!-- Compléter pour afficher le jeu distribué -->
+</body>
+</html>
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+### Travail à faire
 
 Compléter le fichier “jeu.php” pour générer le jeu de cartes
 
