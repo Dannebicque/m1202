@@ -115,7 +115,7 @@ Exemple, la fonction ci-dessous retourne le volume calculé et ne l'affiche plus
 <?php 
 function calculVolume($cote) 
 { 
-    $volume = $cote  $cote  $cote ; 
+    $volume = $cote * $cote * $cote; 
     return $volume; 
 } 
 
