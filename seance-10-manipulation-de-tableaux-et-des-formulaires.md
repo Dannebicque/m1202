@@ -44,8 +44,7 @@ On donne les fichiers de départ ci-dessous :
 
 ### jeu.php
 
-{% code-tabs %}
-{% code-tabs-item title="Fichier jeu.php" %}
+{% code title="Fichier jeu.php" %}
 ```php
 <!DOCTYPE html>
 <html lang ="fr">
@@ -66,13 +65,11 @@ On donne les fichiers de départ ci-dessous :
 </body>
 </html>
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 ### distribue.php
 
-{% code-tabs %}
-{% code-tabs-item title="fichier distribue.php" %}
+{% code title="fichier distribue.php" %}
 ```php
 <!DOCTYPE html>
 <html lang ="fr">
@@ -86,8 +83,7 @@ On donne les fichiers de départ ci-dessous :
 </body>
 </html>
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 ### Travail à faire
 

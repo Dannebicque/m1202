@@ -11,16 +11,14 @@ Vous pouvez utiliser la fonction de la séance précédente pour afficher votre 
 
 L'écriture d’un champ de formulaire doit contenir un label et un champs. Le label et le champ sont associés grâce aux attributs l’**id** du champs et  **for** du label. 
 
-{% code-tabs %}
-{% code-tabs-item title="Exemple d\'un champs de formulaire correctement rédigé" %}
+{% code title="Exemple d\'un champs de formulaire correctement rédigé" %}
 ```markup
 <div>
     <label for="idChamp">Libelle du champ</label>
     <input type="text" name="nomDuChamp" id="idChamp" />
 </div>
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Il est bien sûr possible de mettre du CSS pour rendre tout cela esthétique, des valeurs par défaut, .... 
 
@@ -44,8 +42,7 @@ Ecrire une fonction PHP qui prend des paramètres \(à définir\) et qui affiche
 
 Installer le framework CSS : Bootstrap et modifier la fonction pour que la mise en page soit de type ”bootstrap” [http://getbootstrap.com/](http://getbootstrap.com/) 
 
-{% code-tabs %}
-{% code-tabs-item title="Exemple d\'un formulaire mis en forme avec Boostrap" %}
+{% code title="Exemple d\'un formulaire mis en forme avec Boostrap" %}
 ```markup
 <form>
     <div class="form-group">
@@ -65,8 +62,7 @@ Installer le framework CSS : Bootstrap et modifier la fonction pour que la mise 
     <button type="submit" class="btn btn-default">Submit</button>
 </form>
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 ### Exercice 6
 

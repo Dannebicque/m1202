@@ -6,16 +6,14 @@
 
 La structure d’un formulaire de saisie se compose d’un élément FORM contenant essentiellement une suite de contrôles \(éléments input, textarea, select, button, etc.\) mais aussi des éléments de structuration de document afin d’aligner correctement les champs d’entrée. 
 
-{% code-tabs %}
-{% code-tabs-item title="Exemple d\'un formulaire " %}
+{% code title="Exemple d\'un formulaire " %}
 ```markup
 <form method="(1)" action="(2)">
     du texte, des boutons, des zones de saisie ...
 <input type="submit" value="(3)" />
 </form>
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 1. désigne la méthode qui sera utilisée pour envoyer les informations du formulaire ; c’est "**GET**" \(_par défaut_ ; les données du formulaire sont envoyées dans l’URL\) ou "**POST**" \(les données sont envoyées dans le corps du message, elles ne sont donc pas visibles dans l’URL\). 
 2. désigne l’URL du programme \(PHP dans notre cas\) qui va traiter les données. 
@@ -27,13 +25,11 @@ La structure d’un formulaire de saisie se compose d’un élément FORM conten
 
 Les zones de saisie, les boutons radios et les cases à cocher sont définis par ce contrôle; la syntaxe \(simplifiée\) en est : 
 
-{% code-tabs %}
-{% code-tabs-item title="Exemple d\'un champ \"input\"" %}
+{% code title="Exemple d\'un champ \"input\"" %}
 ```markup
 <input type="type" name="nom" value="valeur" />
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 * **type** peut être : 
   * **text** : pour une zone de saisie au sens habituel du terme \(une zone rectangulaire où l’utilisateur écrit des données, sur une seule ligne\); c’est ce qui sera dans cette zone qui sera envoyé au programme de traitement; 
@@ -51,8 +47,7 @@ Les zones de saisie, les boutons radios et les cases à cocher sont définis par
 
 Pour créer des listes déroulantes ; 
 
-{% code-tabs %}
-{% code-tabs-item title="Exemple d\'un \"select\"" %}
+{% code title="Exemple d\'un \"select\"" %}
 ```markup
 <select name="menu">
     <option>premier choix</option>
@@ -60,13 +55,11 @@ Pour créer des listes déroulantes ;
     <option>troisieme choix</option>
 </select>
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Cette zone permettra d’envoyer une variable de nom _menu_ qui aura pour valeur le choix sélectionné. Pour pré-sélectionner un choix dans la liste il suffit d’ajouter l’attribut `selected=”selected”` dans la balise correspondante. On peut avoir besoin d’envoyer une valeur différente de celle qui est affichée \(par exemple demander à l’utilisateur de choisir une personne par ses nom et prénom, et envoyer l’identifiant de cette personne dans une table d’une base de données\). On utilisera alors l’attribut `value` dans la balise comme dans l'exemple ci-après
 
-{% code-tabs %}
-{% code-tabs-item title="Exemple d\'un select avec des valeurs pour les options" %}
+{% code title="Exemple d\'un select avec des valeurs pour les options" %}
 ```markup
 <select name="responsable">
     <option value="1"> marcel durand</option>
@@ -74,8 +67,7 @@ Cette zone permettra d’envoyer une variable de nom _menu_ qui aura pour valeur
     <option value="3"> pierre martin</option>
 </select>
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Dans cet exemple si on choisit _georges dupont_ la variable _responsable_ aura la valeur 2. 
 
@@ -83,15 +75,13 @@ Dans cet exemple si on choisit _georges dupont_ la variable _responsable_ aura l
 
 Pour des zones de saisies plus grandes qu’avec input.
 
-{% code-tabs %}
-{% code-tabs-item title="Exemple d\'un textarea" %}
+{% code title="Exemple d\'un textarea" %}
 ```markup
 <textarea name="nom" rows="4" cols="40">
 Texte par defaut...
 </textarea>
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 ##  Traitement des formulaires 
 
@@ -106,8 +96,7 @@ Il faut ensuite préciser le nom du champ \(input, select ou textarea\) que l’
 
 ### Exemple 
 
-{% code-tabs %}
-{% code-tabs-item title="Formulaire composé de 3 champs" %}
+{% code title="Formulaire composé de 3 champs" %}
 ```markup
 ...
 <form action="traitement.php" method="POST">
@@ -118,15 +107,13 @@ Il faut ensuite préciser le nom du champ \(input, select ou textarea\) que l’
 </form>
 ...
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 
 
 Un exemple de fichier de traitement permettant d’afficher les données provenant du formulaire pourrait ressembler au code ci-dessous :
 
-{% code-tabs %}
-{% code-tabs-item title="Exemple de fichier de traitement en PHP" %}
+{% code title="Exemple de fichier de traitement en PHP" %}
 ```php
 ...
 <?php
@@ -138,8 +125,7 @@ echo 'Vous êtes '.$prenom.' '.$nom.', vous avez '.$age.' ans';
 ?>
 ...
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 
 

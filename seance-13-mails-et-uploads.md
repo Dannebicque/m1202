@@ -14,32 +14,27 @@ L'utilisation de la fonction mail est relativement simple, elle prend a minima l
 2. le sujet
 3. le message
 
-{% code-tabs %}
-{% code-tabs-item title="Exemple d\'utilisation de la fonction mail" %}
+{% code title="Exemple d\'utilisation de la fonction mail" %}
 ```php
 mail('mail@gmail.com', 'Le Sujet de mon mail', 'Tout le message de mon mail');
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Dans l'exemple ci-dessus, le message et le mail envoyé sont au format texte. Nous verrons un peu plus loin comment envoyer un message avec du HTML.
 
 Si l'on souhaite préciser l'expéditeur, le mail de réponse, ... il faut définir le 4eme paramètre, qui comprend l'en-tête du mail. Sa structure est un peu particulière, vous avez un exemple ci-dessous.
 
-{% code-tabs %}
-{% code-tabs-item title="Un exemple de header additionnel." %}
+{% code title="Un exemple de header additionnel." %}
 ```php
 $headers = 'From: webmaster@example.com' . "\r\n" .
      'Reply-To: webmaster@example.com' . "\r\n" .
      'X-Mailer: PHP/' . phpversion();
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Pour envoyer un email en HTML, il faut définir toute la page HTML dans le message, puis définir les headers afin de préciser que vous envoyer un email au format HTML. Ci-dessous un exemple avec également plusieurs destinataires.
 
-{% code-tabs %}
-{% code-tabs-item title="Mail au format HTML" %}
+{% code title="Mail au format HTML" %}
 ```php
 <?php
      // Plusieurs destinataires
@@ -85,8 +80,7 @@ Pour envoyer un email en HTML, il faut définir toute la page HTML dans le messa
      mail($to, $subject, $message, implode("\r\n", $headers));
 ?>
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 ### Exercice 1
 

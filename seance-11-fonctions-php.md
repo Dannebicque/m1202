@@ -18,15 +18,13 @@ L’appel d’une fonction \(existante ou que vous avez écrit\) est simple en P
 
 Par exemple pour appeler une fonction `calculVolume`, qui va calculer le volume d’un cube, je vais écrire : 
 
-{% code-tabs %}
-{% code-tabs-item title="Exemple d\'appel d\'une fonction" %}
+{% code title="Exemple d\'appel d\'une fonction" %}
 ```php
 <?php 
 calculVolume(); 
 ?>
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 {% hint style="info" %}
 Dans l'état ce code ne produira rien, voire même donnera une erreur. En effet la fonction n’existe pas. Ce n’est pas une fonction existante dans PHP. 
@@ -34,28 +32,24 @@ Dans l'état ce code ne produira rien, voire même donnera une erreur. En effet 
 
 Si j’utilise une fonction qui nécessite un paramètre je dois le passer entre les parenthèses 
 
-{% code-tabs %}
-{% code-tabs-item title="Appel d\'une fonction avec un paramètre" %}
+{% code title="Appel d\'une fonction avec un paramètre" %}
 ```php
 <?php 
 calculVolume(4); 
 ?> 
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Je peux passer des nombres, du texte ou encore des variables. Si ma fonction nécessite plusieurs paramètres, je dois les passer entre les parenthèses en les séparant par des virgules et en respectant l’ordre dans la documentation \(pour une fonction existante\), ou défini dans sa déclaration. 
 
-{% code-tabs %}
-{% code-tabs-item title="Appel d\'une fonction avec plusieurs paramètres" %}
+{% code title="Appel d\'une fonction avec plusieurs paramètres" %}
 ```php
 <?php 
 fonctionImaginaire(17, 'Vert', true, 41.7, $uneVariable); 
 
 ?>
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 ## Récupérer le résultat d’une fonction 
 
@@ -63,22 +57,19 @@ Les exemples précédents exécutent des fonctions pour lesquels on ne récupèr
 
 Pour cela, on doit stocker ce résultat dans une variable. 
 
-{% code-tabs %}
-{% code-tabs-item title="Exemple d\'une fonction dont on récupère la réponse" %}
+{% code title="Exemple d\'une fonction dont on récupère la réponse" %}
 ```php
 <?php
 $volume = calculVolume(4);
 ?> 
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 ## Ecrire ses fonctions 
 
 Nous savons maintenant comment utiliser une fonction. Vous pouvez explorer la documentation PHP \([php.net](https://www.php.net)\) pour trouver un ensemble de fonction. Cependant il est fréquent d'écrire nos propres fonctions. Ecrivons par exemple la fonction calculVolume que l’on a utilisé précédemment 
 
-{% code-tabs %}
-{% code-tabs-item title="Exemple d\'une fonction" %}
+{% code title="Exemple d\'une fonction" %}
 ```php
 <?php 
 //définition de la fonction
@@ -92,8 +83,7 @@ function calculVolume($cote)
 calculVolume(4);
 ?> 
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Regardons les lignes 3 à 7. C’est la fonction. En fait, ces lignes permettent de définir la fonction \(son nom, ce qu’elle est capable de faire, etc.\). Elles ne font rien de particulier, mais elles disent a PHP : "Une fonction calculVolume existe maintenant". Si on ne met pas la ligne 10, cette fonction ne servira jamais. 
 
@@ -109,8 +99,7 @@ Attention, tout ce qui se trouve après un **return**, dans notre fonction ne se
 
 Exemple, la fonction ci-dessous retourne le volume calculé et ne l'affiche plus.
 
-{% code-tabs %}
-{% code-tabs-item title="Exemple d\'une fonction retournant une réponse" %}
+{% code title="Exemple d\'une fonction retournant une réponse" %}
 ```php
 <?php 
 function calculVolume($cote) 
@@ -124,8 +113,7 @@ $v = calculVolume(4);
 echo 'Le volume est de ' . $v;
 ?>
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 L'exemple ci-dessous produira le même résultat que le premier exemple, mais l'affichage n'est plus géré dans la fonction.
 

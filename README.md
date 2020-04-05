@@ -1,12 +1,33 @@
 # M1202 - Algorithmique
 
-## Planning des séances 2019
+## Objectifs
+
+* Comprendre le fonctionnement d’un site internet dynamique
+* Comprendre les échanges clients-serveurs 
+* Écrire ses premières pages dynamiques 
+* Comprendre les concepts de boucles, tests conditionnels et fonctions
+
+## Organisation
+
+10 TD
+
+* 6 TP \(avec Brahim Boudiaf\)
+* 1 évaluation écrite
+* 1 évaluation de TP
+
+## Les pré-requis
+
+Vous devez connaître les langages suivants 
+
+* HTML 
+* CSS 
+* Cela a été fait en M1206 \(intégration web\)
+
+## Planning des séances 2020 \(sous réserve\)
 
 | Date | Séance | Commentaire |
 | :--- | :--- | :--- |
 | 25/04/2019 | [\#1: Concepts](seance-1-concepts.md) | TD1 |
-| 26/04/2019 | [\#2: Instructions](seance-2-instructions.md) | TD2 |
-| 29/04/2019 | [\#3: Instructions](seance-3-instructions.md) | TD3 |
 | 30/04/2019 | [\#4: TP Instructions](seance-4-tp-instructions.md) | TP1 |
 | 02/05/2019 | [\#5: Formulaire](seance-5-formulaires.md) | TD4 |
 | 07/05/2019 | [\#6: TP Formulaires](seance-6-tp-formulaires.md) | TP2 |

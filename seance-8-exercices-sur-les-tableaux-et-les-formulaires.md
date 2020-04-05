@@ -4,22 +4,19 @@
 
 Soit le tableau ci-dessous. Ecrire un code permettant d'afficher toutes les valeurs de ce tableau dans une liste ul/li
 
-{% code-tabs %}
-{% code-tabs-item title="Données pour l\'exercice 1" %}
+{% code title="Données pour l\'exercice 1" %}
 ```php
 <?php
 
 $pays = ['France', 'Belgique', 'Allemange', 'Angleterre', 'Espagne'];
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 ## **Exercice 2 : Tableau associatif**
 
 Le code ci-dessous contient un tableau PHP. Ecrire le code permettant d’afficher ce tableau dans une page HTML. Vous pouvez récupérer les images directement sur Wikipedia.
 
-{% code-tabs %}
-{% code-tabs-item title="Données pour l\'exercice 2" %}
+{% code title="Données pour l\'exercice 2" %}
 ```php
 <?php
 //prix Nobel de physique
@@ -29,8 +26,7 @@ $tableau = [
 	['Nom' => 'Kao', 'Prenom' => 'Charles', 'Annee' => 2009, 'Image' => 'kao.jpg', 'Description' => 'Pour une avancée dans les communications par fibre optique.'],
 ];
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 {% hint style="info" %}
 On peut considérer que l'on connait le nom des clés.

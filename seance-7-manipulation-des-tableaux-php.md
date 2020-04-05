@@ -16,8 +16,7 @@ Les tableaux sont une structure de données qui permet de stocker une suite de v
 
 La taille **t** du tableau donne son nombre d'éléments, dans l’exemple ci-dessus, **t = 7**. Les indices de tableau vont de 0 à t-1. En php, pour connaitre la taille d’un tableau on utilise l’instruction `count($tableau)`, ou `$tableau` est la variable de **type array** pour laquelle vous souhaitez connaître la taille. Essayez le code ci-dessous pour voir le résultat.
 
-{% code-tabs %}
-{% code-tabs-item title="Exemples de manipulations de tableaux indéxés en PHP" %}
+{% code title="Exemples de manipulations de tableaux indéxés en PHP" %}
 ```php
 <?php
 // Creer un tableau vide
@@ -39,13 +38,11 @@ $tabNotes [1] = 8;
 echo 'La valeur à l\'indice 1 est:'. $tabNotes[1];
 ?>
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Le code ci-dessous montre une façon de manipuler un tableau afin de calculer une moyenne. Essayez le code et pour voir le résultat.
 
-{% code-tabs %}
-{% code-tabs-item title="Exemple de manipulation d\'un tableau pour calculer une moyenne \(solution peu élégante\)" %}
+{% code title="Exemple de manipulation d\'un tableau pour calculer une moyenne \(solution peu élégante\)" %}
 ```php
 <?php
 // Creer un tableau rempli
@@ -64,8 +61,7 @@ $moyenne = $somme / 5;
 echo 'La moyenne vaut :'. $moyenne;
 ?>
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 {% hint style="warning" %}
 Quel est l'inconvénient de l'exemple précédent ?
@@ -75,8 +71,7 @@ Evidemment cette solution n’est pas pleinement satisfaisante. En effet, il est
 
 Le code ci-après, permet de manipuler un tableau, sans connaître, a priori, la taille de ce dernier.
 
-{% code-tabs %}
-{% code-tabs-item title="Exemple de manipulation d\'un tableau avec une boucle" %}
+{% code title="Exemple de manipulation d\'un tableau avec une boucle" %}
 ```php
 <?php
 // Creer un tableau rempli
@@ -96,8 +91,7 @@ $moyenne = $somme / count($tabNotes);
 echo '<p>La moyenne vaut :'. $moyenne .'</p>';
 ?>
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Le code ci-dessus parcoure un tableau de l'index 0 \(`$i=0`\), jusqu'au dernier élément \(`$i<count($tabNotes)`\). De cette manière, pour accéder à un élément, on doit utiliser la variable de boucle $i afin d'accéder à l'élément sur lequel la boucle se trouve. De manière itérative, l'ensemble des éléments seront ajoutés à la variable $somme.
 
