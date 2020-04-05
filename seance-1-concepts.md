@@ -1,4 +1,4 @@
-# Séance 1-3 : Concepts
+# Séance 1 : Introduction / Premiers Concepts
 
 ## PHP, qu'est ce que c'est ?
 
