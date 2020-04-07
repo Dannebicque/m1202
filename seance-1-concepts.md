@@ -168,6 +168,7 @@ Le code devrait donc ressembler à
         echo 'Hello World';
         echo '<br>';
         echo 'Je m\'appelle David';
+    ?>
 </body>
 </html>
 ```
