@@ -310,18 +310,18 @@ On peut aussi enchaîner plusieurs conditions avec l'instruction elseif \(sinon 
 
 ```php
 <?php 
-if ($ville=="Troyes") 
+if ($ville=='Troyes') 
 { 
     echo 'Vous etes troyen !'."\n"; 
-} elseif ($ville=="Romilly") 
+} elseif ($ville=='Romilly') 
 { 
     echo 'Vous etes romillon !'."\n"; 
-} elseif ($ville=="Bar sur AUbe") 
+} elseif ($ville=='Bar sur Aube') 
 { 
     echo 'Vous etes baralbin !'."\n"; 
 } else 
 { 
-    echo ''Vous habitez ailleurs !'."\n"; 
+    echo 'Vous habitez ailleurs !'."\n"; 
 } 
 ?>
 ```
