@@ -323,25 +323,23 @@ if ($ville=='Troyes')
 { 
     echo 'Vous habitez ailleurs !'."\n"; 
 } 
-?>
+?
 ```
 
-
-
-Switch/Case
+### Switch/Case
 
 L'instruction switch/case permet de traiter plusieurs conditions sous une forme réduite : 
 
 ```php
 <?php 
 switch ($ville) { 
-    case "Troyes": 
+    case 'Troyes': 
         echo 'Vous etes troyen !'."\n"; 
     break; 
-    case "Romilly": 
+    case 'Romilly': 
         echo 'Vous etes romillon !'."\n"; 
     break; 
-    case "Bar-sur-Aube": 
+    case 'Bar-sur-Aube': 
         echo 'Vous etes baralbin !'."\n"; 
     break; 
     default: 
@@ -356,15 +354,15 @@ Dans certains cas, il est utile de ne pas mettre de break quand plusieurs choix 
 
 ```php
 <?php 
-$ville="Sens"; 
+$ville='Sens'; 
 switch ($ville) { 
-case "Troyes": 
-case "Romilly": 
-case "Bar-sur-Aube": 
+case 'Troyes': 
+case 'Romilly': 
+case 'Bar-sur-Aube': 
     echo 'Vous etes aubois !'."\n"; 
 break; 
-case "Sens": 
-case "Auxerre": 
+case 'Sens': 
+case 'Auxerre': 
     echo 'Vous etes icaunais !'."\n"; 
 break; 
 default: 
