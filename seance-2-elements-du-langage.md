@@ -243,9 +243,9 @@ echo 'Bienvenue en MMI !'."\n";
 ?>
 ```
 
-Conditions et opérateurs de comparaison
+### Conditions et opérateurs de comparaison
 
-Qu'est ce qu'une condition
+#### Qu'est ce qu'une condition
 
 Une condition est une expression qui peut prendre uniquement deux valeurs **booléennes** : vrai \(**true**\) ou faux \(**false**\) .
 
@@ -282,9 +282,9 @@ Pour lier entre elles plusieurs conditions, on utilise les opérateur et \(AND\)
 ```php
 <?php 
 if ($note>=10) { ... } 
-if ($note=10) { ... } 
+if ($note==10) { ... } 
 if ($age>=18) { ... } 
-if ($age6 && $age=18 && ($ville=="Troyes" || $ville=="Romilly")){ ... } 
+if ($age >=6 && $age <=18 && ($ville=="Troyes" || $ville=="Romilly")){ ... } 
 ?>
 ```
 
