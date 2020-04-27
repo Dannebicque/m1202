@@ -27,18 +27,20 @@ Vous devez connaître les langages suivants
 
 | Date | Séance | Commentaire |
 | :--- | :--- | :--- |
-| 25/04/2019 | [\#1: Concepts](seance-1-concepts.md) | TD1 |
-| 30/04/2019 | [\#4: TP Instructions](seance-4-tp-instructions.md) | TP1 |
-| 02/05/2019 | [\#5: Formulaire](seance-5-formulaires.md) | TD4 |
-| 07/05/2019 | [\#6: TP Formulaires](seance-6-tp-formulaires.md) | TP2 |
-| 13/05/2019 | [\#7: Tableaux](seance-7-manipulation-des-tableaux-php.md) | TD5 |
-| 13/05/2019 | [\#8: Exercices Tableaux](seance-8-exercices-sur-les-tableaux-et-les-formulaires.md) | TD6 |
-| 15/05/2019 | [\#9: Manipulation de tableaux et des formulaires](seance-9-manipulation-de-tableaux-et-des-formulaires.md) | TP3 |
-| 20/05/2019 | [\#10: Manipulation de tableaux et des formulaires](seance-10-manipulation-de-tableaux-et-des-formulaires.md) | TP4 |
-| 21/05/2019 |  | TD7 |
-| 29/05/2019 | [\#11: Fonctions PHP](seance-11-fonctions-php.md) | TD8 |
-| 04/06/2019 | [\#12: Fonctions PHP](seance-12-exercices-fonctions-php.md) | TD9 |
-| 05/06/2019 | [\#Evaluation sur table](evaluation-sur-table.md) | TD10 Evaluation |
-| 05/06/2019 | [\#13: Mails et uploads](seance-13-mails-et-uploads.md) | TP5 |
-| 06/06/2019 | [\#TP Noté](tp-note.md) | TP6 Noté |
+| 07/04/2020 | [\#1: Concepts](seance-1-concepts.md) | Séance 1 |
+| 07/04/2020 | [\#2 variables et tes](seance-2-elements-du-langage.md)ts | Séance 2 |
+| 29/04/2020 | [\#3 : Boucles](seance-3-boucles.md) | Séance 3 |
+| 29/04/2020 | [\#4: TP Instructions](seance-4-tp-instructions.md) | Séance 4 TP |
+| 29/04/2020 | [\#5: Formulaire](seance-5-formulaires.md) | Séance 5 |
+| 05/05/2020 | [\#6: TP Formulaires](seance-6-tp-formulaires.md) | Séance 6 TP |
+| 06/05/2020 | [\#7: Tableaux](seance-7-manipulation-des-tableaux-php.md) | Séance 7 |
+| 12/05/2020 | [\#8: Exercices Tableaux](seance-8-exercices-sur-les-tableaux-et-les-formulaires.md) | Séance 8 TP |
+| 12/05/2020 | [\#9: Manipulation de tableaux et des formulaires](seance-9-manipulation-de-tableaux-et-des-formulaires.md) | Séance 9 |
+| 13/05/2020 | [\#10: Manipulation de tableaux et des formulaires](seance-10-manipulation-de-tableaux-et-des-formulaires.md) | Séance 10 |
+| 19/05/2020 | [\#11: Fonctions PHP](seance-11-fonctions-php.md) | Séance 11 |
+| 19/05/2020 | [\#12: Fonctions PHP](seance-12-exercices-fonctions-php.md) | Séance 12 TP |
+| 27/05/2020 | [\#13: Mails et Uploads](seance-13-mails-et-uploads.md) | Séance 13 |
+| 27/05/2020 | [\#14: Exercices Mails et Uploads](seance-14-exercices-mails-et-uploads.md) | Séance 14 TP |
+| 27/05/2020 | [\#15: TP Noté \(15h30\)](tp-note.md) | Séance 15 TP NOTE |
+| 02/06/2020 | [\#16: Evaluation écrite](evaluation-sur-table.md) | Séance 16 |
 

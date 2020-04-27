@@ -2,7 +2,8 @@
 
 * [M1202 - Algorithmique](README.md)
 * [Séance 1 : Introduction / Premiers Concepts](seance-1-concepts.md)
-* [Séance 2 : Eléments du langage](seance-2-elements-du-langage.md)
+* [Séance 2 : Eléments du langage et tests conditionnels](seance-2-elements-du-langage.md)
+* [Séance 3 : Boucles](seance-3-boucles.md)
 * [Séance 4 : TP Instructions](seance-4-tp-instructions.md)
 * [Séance 5 : Formulaires](seance-5-formulaires.md)
 * [Séance 6 : TP Formulaires](seance-6-tp-formulaires.md)
