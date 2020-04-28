@@ -28,9 +28,9 @@ for ($i=0; $i<100; $i++)
 
 Trois éléments dans les parenthèses : 
 
-* Initialisation de la variable de boucle 
-* Condition qui doit être vraie pour exécuter le bloc 
-* Modification de la variable de boucle
+* Initialisation de la variable de boucle \(`$i=0`\)
+* Condition qui doit être vraie pour exécuter le bloc \(`$i<100`\)
+* Modification de la variable de boucle \(`$i++`\)
 
 ```php
 <?php 
@@ -65,7 +65,7 @@ for ($i=11; $i>1; $i=$i-2) {
 
 {% tabs %}
 {% tab title="Ennoncé" %}
-
+Ecrire une boucle qui fait la somme des nombres de 1 à 100, et qui affiche le résultat.
 {% endtab %}
 
 {% tab title="Correction" %}
@@ -92,9 +92,9 @@ while ($ < 100)
 
 Trois éléments : 
 
-* Initialisation de la variable de boucle $i=0; \(on peut mettre autre chose que 0\) 
-* Condition qui doit être vraie pour exécuter le bloc \($i&lt;100\) 
-* Modification de la variable de boucle $i++; \(on peut agir différemment sur $i\)
+* Initialisation de la variable de boucle `$i=0`; \(on peut mettre autre chose que 0\) 
+* Condition qui doit être vraie pour exécuter le bloc \(`$i<100`\) 
+* Modification de la variable de boucle `$i++`; \(on peut agir différemment sur $i\)
 
 {% hint style="warning" %}
 Attention aux boucles infinies \(c'est à dire dont la condition ne serait jamais vérifiée !\). Ces boucles feront forcément planter votre serveur PHP
@@ -109,6 +109,10 @@ Ecrire une boucle \(avec un while\) qui affiche tous les nombres impairs \(à pa
 
 {% endtab %}
 {% endtabs %}
+
+{% hint style="danger" %}
+**Attention aux boucles infinies.** Si vous oubliez d'incrémenter $i dans la boucle while, la condition ne sera jamais vérifiée, et votre boucle ne s'arrêtera jamais. Le serveur ne rendra la main que lorsqu'il aura planté. Il peut se produire la même chose avec une boucle for, si la condition est mal écrite.
+{% endhint %}
 
 ### Boucle Do ... While
 
@@ -130,9 +134,19 @@ do
 
  Trois éléments : 
 
-* Initialisation de la variable de boucle $i=0; \(on peut mettre autre chose que 0\) 
-* Condition qui doit être vraie pour exécuter le bloc \($i&lt;10\) 
-* Modification de la variable de boucle $i++; \(on peut agir différemment sur $i\) 
+* Initialisation de la variable de boucle `$i=0`; \(on peut mettre autre chose que 0\) 
+* Condition qui doit être vraie pour exécuter le bloc \(`$i<10`\) 
+* Modification de la variable de boucle `$i++`; \(on peut agir différemment sur $i\) 
+
+#### Exercices complémentaires
+
+#### Exercice 1
+
+Ecrire une boucle qui fait la somme des nombres de 1 à 100 et qui affiche le résultat avec une boucle WHILE.
+
+#### Exercice 2
+
+Ecrire une boucle qui affiche tous les nombres impairs \(à partir de 2\), inférieurs à 20 avec une boucle for.
 
 
 
