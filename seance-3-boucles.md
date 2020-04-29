@@ -99,7 +99,7 @@ La boucle while permet de répéter un bloc d'instructions quand on ne connaît 
 <?php 
 echo 'Punition'."\n"; 
 $i=0; 
-while ($ < 100)
+while ($i < 100)
 {
     echo $i.' Je dois apprendre mon cours !';
     $i++;
@@ -114,10 +114,6 @@ Trois éléments :
 * Condition qui doit être vraie pour exécuter le bloc \(`$i<100`\) 
 * Modification de la variable de boucle `$i++`; \(on peut agir différemment sur $i\)
 
-{% hint style="warning" %}
-Attention aux boucles infinies \(c'est à dire dont la condition ne serait jamais vérifiée !\). Ces boucles feront forcément planter votre serveur PHP
-{% endhint %}
-
 {% tabs %}
 {% tab title="Ennoncé" %}
 Ecrire une boucle \(avec un while\) qui affiche tous les nombres impairs \(à partir de 2\), inférieurs à 20.
@@ -129,7 +125,7 @@ Ecrire une boucle \(avec un while\) qui affiche tous les nombres impairs \(à pa
 {% endtabs %}
 
 {% hint style="danger" %}
-**Attention aux boucles infinies.** Si vous oubliez d'incrémenter $i dans la boucle while, la condition ne sera jamais vérifiée, et votre boucle ne s'arrêtera jamais. Le serveur ne rendra la main que lorsqu'il aura planté. Il peut se produire la même chose avec une boucle for, si la condition est mal écrite.
+**Attention aux boucles infinies.** Si vous oubliez d'incrémenter `$i` dans la boucle while, la condition ne sera jamais vérifiée, et votre boucle ne s'arrêtera jamais. Le serveur ne rendra la main que lorsqu'il aura planté. Il peut se produire la même chose avec une boucle for, si la condition est mal écrite.
 {% endhint %}
 
 ### Boucle Do ... While
