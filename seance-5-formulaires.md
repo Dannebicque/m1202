@@ -109,8 +109,6 @@ Il faut ensuite préciser le nom du champ \(input, select ou textarea\) que l’
 ```
 {% endcode %}
 
-
-
 Un exemple de fichier de traitement permettant d’afficher les données provenant du formulaire pourrait ressembler au code ci-dessous :
 
 {% code title="Exemple de fichier de traitement en PHP" %}
@@ -127,11 +125,13 @@ echo 'Vous êtes '.$prenom.' '.$nom.', vous avez '.$age.' ans';
 ```
 {% endcode %}
 
-
-
 ## Exercices
 
-### Exercice 1 : Calculatrice 
+### Exercice 1 : Testez l'exemple
+
+Testez l'exemple ci-dessus avec le nom, le prénom et l'âge. Faite le fonctionner.
+
+### Exercice 2 : Calculatrice 
 
 Ecrire un formulaire ´ « calculatrice » qui comprendra 2 cases \(zone de saisie libre\) pour la saisie des nombres \(opérande\), un groupe de 4 cases à cocher pour le choix de l’opération, un bouton pour effectuer l’opération.
 
