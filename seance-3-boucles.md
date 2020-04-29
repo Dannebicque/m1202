@@ -120,7 +120,27 @@ Ecrire une boucle \(avec un while\) qui affiche tous les nombres impairs \(à pa
 {% endtab %}
 
 {% tab title="Correction" %}
+```php
+$i=3;
+while($i<20)
+{
+    echo $i;
+    $i+=2; //pour augmenter de 2 en 2. ou $i=$i+2
+}
+```
 
+Ou
+
+```php
+$i = 2;
+echo 'Les nombres suivants sont impairs : ';
+while ($i < 20) {
+    if ($i % 2 !== 0) { //on vérifie que le nombre est impair en calculant le modula par 2. S'il est différent de 0, alors le nombre est impair
+        echo $i.' ';
+    }
+    $i++;
+}
+```
 {% endtab %}
 {% endtabs %}
 
