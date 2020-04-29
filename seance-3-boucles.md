@@ -124,7 +124,7 @@ Ecrire une boucle \(avec un while\) qui affiche tous les nombres impairs \(à pa
 $i=3;
 while($i<20)
 {
-    echo $i;
+    echo $i.' ';
     $i+=2; //pour augmenter de 2 en 2. ou $i=$i+2
 }
 ```
