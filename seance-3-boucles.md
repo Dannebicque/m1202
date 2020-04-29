@@ -69,7 +69,25 @@ Ecrire une boucle qui fait la somme des nombres de 1 à 100, et qui affiche le r
 {% endtab %}
 
 {% tab title="Correction" %}
-Ecrire une boucle qui fait la somme des nombres de 1 à 100, et qui affiche le résultat.
+```php
+<!DOCTYPE html>
+<html lang ="fr">
+<head>
+    <title>Ma page avec du PHP </title>
+    <meta charset="utf-8" />
+</head>
+<body>
+<?php
+$somme = 0;
+for ($i = 1 ; $i <= 100; $i++) //equivalent à $i=$i+1
+{
+    $somme = $somme + $i; // équivalent $somme += $i;
+}
+echo 'La somme des 100 premiers nombres est '.$somme;
+?>
+</body>
+</html>
+```
 {% endtab %}
 {% endtabs %}
 
