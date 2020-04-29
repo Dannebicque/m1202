@@ -92,7 +92,7 @@ Le traitement d’un formulaire se fait toujours \(pour notre semestre 1\) avec 
 * `$_POST[ ]` si le formulaire est envoyé en POST \(method=”POST”\) 
 * `$_GET[ ]` si le formulaire est envoyé en GET \(method=”GET”\) 
 
-Il faut ensuite préciser le nom du champ \(input, select ou textarea\) que l’on souhaite récupérer en écrivant par exemple `$ POST['nom_du_champ']`. Le nom du champ est la valeur de l’attribut name de votre champ. 
+Il faut ensuite préciser le nom du champ \(input, select ou textarea\) que l’on souhaite récupérer en écrivant par exemple `$_POST['nom_du_champ']`. Le nom du champ est la valeur de l’attribut name de votre champ. 
 
 ### Exemple 
 
