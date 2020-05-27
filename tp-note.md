@@ -1,6 +1,6 @@
 # TP Noté
 
-Le TP noté sera une série d'exercice à réaliser en une heure.
+Le TP noté sera une série d'exercice à réaliser en une heure \(six exercices de 10 minutes\).
 
 Tout sera au programme sauf la gestion des mails et l'upload.
 
